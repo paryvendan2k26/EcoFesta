@@ -78,7 +78,7 @@ const DonationHistory = () => {
                 <div className="md:w-32 md:h-32 w-full h-48">
                   {donation.images && donation.images.length > 0 ? (
                     <img
-                      src={`http://localhost:5000/uploads/${donation.images[0]}`}
+                      src={`${process.env.REACT_APP_API_URL.replace('/api', '')}/uploads/${product.images[0]}`}
                       alt={donation.title}
                       className="w-full h-full object-cover rounded-lg"
                       onError={(e) => {

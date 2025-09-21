@@ -194,7 +194,8 @@ const SearchProducts = () => {
                 {product.images && product.images.length > 0 ? (
                   <>
                     <img
-                      src={`http://localhost:5000/uploads/${product.images[0]}`}
+                      src={`${process.env.REACT_APP_API_URL.replace('/api', '')}/uploads/${product.images[0]}`}
+
                       alt={product.name}
                       className="w-full h-48 object-cover rounded-lg"
                       onError={(e) => {

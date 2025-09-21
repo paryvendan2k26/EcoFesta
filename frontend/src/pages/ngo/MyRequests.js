@@ -106,7 +106,7 @@ const MyRequests = () => {
                 <div className="md:w-32 md:h-32 w-full h-48">
                   {request.images && request.images.length > 0 ? (
                     <img
-                      src={`${process.env.REACT_APP_API_URL.replace('/api', '')}/uploads/${donation.images[0]}`}
+                      src={`${process.env.REACT_APP_API_URL.replace('/api', '')}/uploads/${request.images[0]}`}
                       alt={request.title}
                       className="w-full h-full object-cover rounded-lg"
                       onError={(e) => {

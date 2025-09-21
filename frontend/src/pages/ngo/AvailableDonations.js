@@ -205,7 +205,7 @@ const AvailableDonations = () => {
                 {donation.images && donation.images.length > 0 ? (
                   <>
                     <img
-                      src={`${process.env.REACT_APP_API_URL.replace('/api', '')}/uploads/${product.images[0]}`}
+                      src={`${process.env.REACT_APP_API_URL.replace('/api', '')}/uploads/${donation.images[0]}`}
 
                       alt={donation.title}
                       className="w-full h-48 object-cover rounded-lg"
